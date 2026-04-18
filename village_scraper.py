@@ -10,13 +10,13 @@ def scrape_village(town : Village) -> List[House]:
     tags = BeautifulSoup(town_php, 'html.parser').findAll('script')
 
     village_script = list(filter(lambda tag: len(tag.attrs) == 0, tags))[0].text
-    v_value_search = re.compile("var v=([\d]*);").search(village_script)
+    v_value_search = re.compile("var v=([\\d]*);").search(village_script)
 
     if v_value_search is None:
         raise Exception('Cound not find village number when scraping village')
     v = int(v_value_search.group(1))
 
-    map_search = re.compile('var map=\[.*\];').search(village_script)
+    map_search = re.compile('var map=\\[.*\\];').search(village_script)
     if map_search is None:
         raise Exception('Cound not find village village map')
 

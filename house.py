@@ -15,10 +15,12 @@ class House:
         self._residents = None
     def get_village(self):
         return self._village
+    def is_empty(self) -> bool:
+        return self._house_index == 'empty'
 
     def get_residents(self) -> list:
         if self._residents is not None:
-            return self._residents
+            return list(self._residents)
         house_request = _session.get(
             f'{_BASE_URL}/house.php?v={self._village_index}&h={self._house_index}',
             headers={'Referer': f'https://islands.smp.uq.edu.au/village.php?{self.get_village().get_name()}'})
@@ -42,7 +44,7 @@ class House:
                             self._village)
             manager._persons[_id] = person
             self._residents.append(person)
-        return self._residents if self._residents is not None else []
+        return list(self._residents) if self._residents is not None else []
 
     def __repr__(self):
         return "House - {} in {}".format(self._house_index, self._village.get_name())

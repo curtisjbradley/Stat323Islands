@@ -9,7 +9,7 @@ _BASE_URL= 'https://islands.smp.uq.edu.au'
 _session = requests.sessions.Session()
 
 _login_url = f'{_BASE_URL}/login.php'
-_r = _session.post(_login_url, data={'email': os.getenv('username'), 'word': os.getenv('password'), 'Sign In': 'Sign In'})
+_r = _session.post(_login_url, data={'email': os.getenv('login'), 'word': os.getenv('password'), 'Sign In': 'Sign In'})
 
 if _r.url == _login_url:
     raise Exception('Error With Authentication')
