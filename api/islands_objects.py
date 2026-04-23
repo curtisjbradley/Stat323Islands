@@ -1,4 +1,4 @@
-from house import House
+from .house import House
 from typing import List
 
 class Village:

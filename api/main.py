@@ -1,9 +1,8 @@
-from data_loader import get_islands, get_villages
-from person import manager
+from .data_loader import get_islands, get_villages
+from .person import manager,Person
 from bs4 import BeautifulSoup
 import regex as re
-from person import Person
-from session_manager import make_request
+from .session_manager import make_request
 import ast
 class IslandsAPI:
     def __init__(self):
@@ -25,6 +24,9 @@ class IslandsAPI:
 
         heads = [g.group() for g in
                  (re.compile("heads\\[\\d+\\] = (\\{[.'\\d\\w:,<>\\[\\]\\s-#]+\\})").finditer(heads_script.text))]
-
-        return [Person(head['id'], head['name']) for head in [ast.literal_eval(head[head.index('{'):]) for head in heads]]
+        persons = [Person(head['id'], head['name'].replace("<br>", " ")) for head in [ast.literal_eval(head[head.index('{'):]) for head in heads]]
+        for p in persons:
+            self._PersonManager.register_person(p)
+        persons = [self._PersonManager.get_person(p.get_id())  for p in persons]
+        return persons
 

@@ -1,6 +1,6 @@
-from person import Person, manager
+from .person import Person, manager
 
-from session_manager import _session, _BASE_URL
+from .session_manager import _session, _BASE_URL
 
 from bs4 import BeautifulSoup
 
@@ -42,7 +42,7 @@ class House:
                 return  manager._persons[_id]
             person = Person(_id, res.find('a').text, int(res.find('td', class_='age').text),
                             self._village)
-            manager._persons[_id] = person
+            manager.register_person(person)
             self._residents.append(person)
         return list(self._residents) if self._residents is not None else []
 

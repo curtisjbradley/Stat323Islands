@@ -2,8 +2,7 @@ import requests
 from dotenv import load_dotenv
 import os
 
-load_dotenv('./.env')
-
+load_dotenv('.env')
 _BASE_URL= 'https://islands.smp.uq.edu.au'
 
 _session = requests.sessions.Session()

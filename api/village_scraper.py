@@ -1,12 +1,12 @@
 import ast
-import session_manager
-from islands_objects import Village, House
+from .session_manager import make_request
+from .islands_objects import Village, House
 from bs4 import BeautifulSoup
 import regex as re
 from typing import List
 
 def scrape_village(town : Village) -> List[House]:
-    town_php = session_manager.make_request(f'village.php?{town.get_name()}')
+    town_php = make_request(f'village.php?{town.get_name()}')
     tags = BeautifulSoup(town_php, 'html.parser').findAll('script')
 
     village_script = list(filter(lambda tag: len(tag.attrs) == 0, tags))[0].text

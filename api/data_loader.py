@@ -1,12 +1,12 @@
-import session_manager
 import regex as re
 import ast
 from typing import List
-from islands_objects import Island, Village
-from village_scraper import scrape_village
+from .islands_objects import Island, Village
+from .village_scraper import scrape_village
+from .session_manager import make_request
 
 
-island_js = session_manager.make_request('/js/island.js?v=3.1')
+island_js = make_request('/js/island.js?v=3.1')
 _island_list = re.compile('var islands = \\[[\\w\\d\\s.\':\\{,\\}]*\\];').search(island_js)
 
 if _island_list is None:

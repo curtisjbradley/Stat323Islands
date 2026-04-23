@@ -1,4 +1,4 @@
-from session_manager import _session, _BASE_URL, make_request
+from .session_manager import _session, _BASE_URL, make_request
 import regex as re
 from bs4 import BeautifulSoup
 
@@ -37,6 +37,9 @@ class Person:
         if self.name is None:
             self.update_person()
         return self.name
+    def get_id(self):
+        return self._id
+
     def update_person(self) -> None:
         island_raw = make_request(f'islander.php?id={self._id}')
         parsed = BeautifulSoup(island_raw, 'html.parser')
@@ -53,17 +56,19 @@ class Person:
 class PersonManager:
     def __init__(self):
         self._persons = {}
-    def get_person(self, id) -> Person:
-        if id in self._persons:
-            return self._persons[id]
+    def get_person(self, _id) -> Person:
+        if _id in self._persons:
+            return self._persons[_id]
         else:
-            person = Person(id)
+            person = Person(_id)
             try:
-                self._persons[id] = person
+                self._persons[_id] = person
                 return person
             except:
                 return None
-
+    def register_person(self, person: Person):
+        if person.get_id() not in self._persons:
+            self._persons[person.get_id()] = person
 
 manager = PersonManager()
 __all__ = ['Person', 'manager']
