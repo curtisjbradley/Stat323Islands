@@ -6,13 +6,14 @@ from bs4 import BeautifulSoup
 from typing import List
 
 class Person:
-    def __init__(self,_id,name : str =None,age : int=None, village :str  =None, consented : bool = None,completed_tasks : List[TaskResult] = None ):
+    def __init__(self,_id,name : str =None,age : int=None, village :str  =None, consented : bool = None,completed_tasks : List[TaskResult] = None, awake : bool = None ):
         self._id : str = _id
         self.name : str = name
         self._age : int = age
         self._village : str= village
         self._consented : bool = consented
         self._tasks = completed_tasks
+        self._awake = awake
 
     def __repr__(self):
         return "Person: Id {}".format(self._id)
@@ -45,6 +46,10 @@ class Person:
         return self.name
     def get_id(self) -> str:
         return self._id
+    def is_awake(self):
+        if self._awake is None:
+            self.update_person()
+        return self._awake
 
     def get_village(self) -> str:
         if self._village is None:
@@ -77,6 +82,9 @@ class Person:
     def update_person(self) -> None:
         island_raw = make_request(f'islander.php?id={self._id}')
         parsed = BeautifulSoup(island_raw, 'html.parser')
+
+
+        self._awake = int(re.compile("var awake = (\\d+);").search(parsed.find('body').find('script').text).group(1)) == 1
 
         info_tab = parsed.find('div', id='t1')
         self.name = parsed.title.text
