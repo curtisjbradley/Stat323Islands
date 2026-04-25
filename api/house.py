@@ -20,7 +20,7 @@ class House:
 
     def get_residents(self) -> list:
         if self._residents is not None:
-            return list(self._residents)
+            return self._residents
         house_request = _session.get(
             f'{_BASE_URL}/house.php?v={self._village_index}&h={self._house_index}',
             headers={'Referer': f'https://islands.smp.uq.edu.au/village.php?{self.get_village().get_name()}'})
@@ -39,12 +39,12 @@ class House:
             _id = person_id.attrs['href'][16:]
 
             if _id in manager._persons:
-                return  manager._persons[_id]
-            person = Person(_id, res.find('a').text, int(res.find('td', class_='age').text),
-                            self._village)
+                self._residents.append(manager._persons[_id])
+                continue
+            person = Person(_id, res.find('a').text, int(res.find('td', class_='age').text))
             manager.register_person(person)
             self._residents.append(person)
-        return list(self._residents) if self._residents is not None else []
+        return self._residents
 
     def __repr__(self):
         return "House - {} in {}".format(self._house_index, self._village.get_name())
