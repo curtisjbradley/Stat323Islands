@@ -67,6 +67,8 @@ class Person:
             f'{_BASE_URL}/task.php?id={self._id}&code={task.code()}', headers=header)
         if res.status_code != 200:
             raise Exception("Error with toggle contact request")
+        if res.text == 'Not available':
+            return None
         split_lines = res.text.splitlines()
         return {"start_time": float(split_lines[0]), "end_time": float(split_lines[1]), "category": split_lines[2], "number?": split_lines[3], "text": split_lines[4]}
 
@@ -93,6 +95,13 @@ class Person:
         tasks = [task for task in tasks.find_all('div', class_='taskresult') if task.text.strip() != '']
 
         def parse_result(task):
+            if task.text is None:
+                return None
+
+            if task.find('div', class_='taskresulttask') is None:
+                #TODO: Support for tax records
+                return TaskResult(task.find('div', class_='taskresulttd').text.strip(), "NYI", None)
+
             result = None
             if task.find('div', class_="taskresultresult") is not None:
                 result = task.find('div', class_="taskresultresult").text
