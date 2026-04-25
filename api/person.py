@@ -87,7 +87,7 @@ class Person:
         self._awake = int(re.compile("var awake = (\\d+);").search(parsed.find('body').find('script').text).group(1)) == 1
 
         info_tab = parsed.find('div', id='t1')
-        self.name = parsed.title.text
+        self.name = parsed.title.text.replace("<br>", " ")
         rows = [list(row.children)[0] for row in info_tab.find('table').find_all('tr')]
         rows = rows[1:['id' in row.attrs for row in rows].index(True) - 1]
         self._age = int(re.compile('\\d+').findall(rows[0].text)[0])
