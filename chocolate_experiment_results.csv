@@ -1,63 +1,63 @@
 ,person_id,treatment,base_blood_glucose,end_blood_glucose
-0,Person: Id 8uawxcp4e5,Control,92,89
-1,Person: Id czwugg2hn6,Control,90,88
-2,Person: Id sdqs3bgcu9,Control,85,87
-3,Person: Id m4vtt3nf5y,Control,87,84
-4,Person: Id slhktb7gtj,Control,96,96
-5,Person: Id d92bk2qj4z,Control,85,86
-6,Person: Id ndvmpfcdax,Control,90,88
-7,Person: Id wj9trvcqc9,Control,93,96
-8,Person: Id sahfgjymbv,Control,89,90
-9,Person: Id v5pmb34zfr,Control,89,91
-10,Person: Id g95l2hmgf8,Control,89,92
-11,Person: Id 95zynn88w8,Control,83,81
-12,Person: Id bdhv8hcekj,Control,94,92
-13,Person: Id m8pd3xntcr,40% Dark,91,91
-14,Person: Id dgsd2ztkqh,40% Dark,86,86
-15,Person: Id 9b24ge9e9g,40% Dark,87,84
-16,Person: Id pc5r8ugrgf,40% Dark,86,85
-17,Person: Id lmpk5hpjer,40% Dark,88,87
-18,Person: Id pjhpfdl877,40% Dark,84,84
-19,Person: Id 7fbk4esj6y,40% Dark,91,92
-20,Person: Id nq7v8jvhgj,40% Dark,86,89
-21,Person: Id 3v9wfnbpw3,40% Dark,93,93
-22,Person: Id rmdj9agkx8,40% Dark,92,94
-23,Person: Id 4cdmnkkcgp,40% Dark,89,87
-24,Person: Id fggzhu5pnt,40% Dark,98,96
-25,Person: Id lhvzvmn67y,40% Dark,85,82
-26,Person: Id wpfsba8ydm,70% Dark,90,92
-27,Person: Id 2g7u9h5t4b,70% Dark,89,91
-28,Person: Id cu5cecmdu9,70% Dark,99,98
-29,Person: Id ds56b9yyd9,70% Dark,98,95
-30,Person: Id agdlwswhwu,70% Dark,92,106
-31,Person: Id ht4tedak6q,70% Dark,84,83
-32,Person: Id culbdasr8c,70% Dark,94,90
-33,Person: Id 9lbfmbj3na,70% Dark,86,86
-34,Person: Id bvfn4y4eqm,70% Dark,93,95
-35,Person: Id huv44xwxe6,70% Dark,86,89
-36,Person: Id r46cglybfy,70% Dark,88,86
-37,Person: Id jurtl9cswh,70% Dark,87,87
-38,Person: Id g9pz9h9vh4,85% Dark,85,82
-39,Person: Id e7j8ql5zqp,85% Dark,95,96
-40,Person: Id 76ghmc37tf,85% Dark,91,88
-41,Person: Id 8ht744zpav,85% Dark,93,91
-42,Person: Id ap85nthk87,85% Dark,90,91
-43,Person: Id 4fel6r52k8,85% Dark,83,81
-44,Person: Id wgqt532egr,85% Dark,93,92
-45,Person: Id plbshz5w36,85% Dark,93,94
-46,Person: Id bca8bah4ke,85% Dark,106,104
-47,Person: Id 2weybet539,85% Dark,86,88
-48,Person: Id qd8c7qwk6d,85% Dark,89,92
-49,Person: Id mv5d3egv5u,85% Dark,100,98
-50,Person: Id g7sgxs87xb,99% Dark,87,87
-51,Person: Id wqh7fm3qnj,99% Dark,89,90
-52,Person: Id szp7kastzr,99% Dark,89,89
-53,Person: Id ghd8d5ngwv,99% Dark,93,94
-54,Person: Id wuy4rz6hq9,99% Dark,90,90
-55,Person: Id guu7bj67wx,99% Dark,87,88
-56,Person: Id k6xgu2dg28,99% Dark,86,85
-57,Person: Id ftf4qwq8rl,99% Dark,87,88
-58,Person: Id fvmfea6yf2,99% Dark,91,89
-59,Person: Id vx7gcsn79n,99% Dark,91,92
-60,Person: Id n445q3c942,99% Dark,90,91
-61,Person: Id 3yvg2d4ugh,99% Dark,89,92
+0,8uawxcp4e5,Control,92,89
+1,czwugg2hn6,Control,90,88
+2,sdqs3bgcu9,Control,85,87
+3,m4vtt3nf5y,Control,87,84
+4,slhktb7gtj,Control,96,96
+5,d92bk2qj4z,Control,85,86
+6,ndvmpfcdax,Control,90,88
+7,wj9trvcqc9,Control,93,96
+8,sahfgjymbv,Control,89,90
+9,v5pmb34zfr,Control,89,91
+10,g95l2hmgf8,Control,89,92
+11,95zynn88w8,Control,83,81
+12,bdhv8hcekj,Control,94,92
+13,m8pd3xntcr,40% Dark,91,91
+14,dgsd2ztkqh,40% Dark,86,86
+15,9b24ge9e9g,40% Dark,87,84
+16,pc5r8ugrgf,40% Dark,86,85
+17,lmpk5hpjer,40% Dark,88,87
+18,pjhpfdl877,40% Dark,84,84
+19,7fbk4esj6y,40% Dark,91,92
+20,nq7v8jvhgj,40% Dark,86,89
+21,3v9wfnbpw3,40% Dark,93,93
+22,rmdj9agkx8,40% Dark,92,94
+23,4cdmnkkcgp,40% Dark,89,87
+24,fggzhu5pnt,40% Dark,98,96
+25,lhvzvmn67y,40% Dark,85,82
+26,wpfsba8ydm,70% Dark,90,92
+27,2g7u9h5t4b,70% Dark,89,91
+28,cu5cecmdu9,70% Dark,99,98
+29,ds56b9yyd9,70% Dark,98,95
+30,agdlwswhwu,70% Dark,92,106
+31,ht4tedak6q,70% Dark,84,83
+32,culbdasr8c,70% Dark,94,90
+33,9lbfmbj3na,70% Dark,86,86
+34,bvfn4y4eqm,70% Dark,93,95
+35,huv44xwxe6,70% Dark,86,89
+36,r46cglybfy,70% Dark,88,86
+37,jurtl9cswh,70% Dark,87,87
+38,g9pz9h9vh4,85% Dark,85,82
+39,e7j8ql5zqp,85% Dark,95,96
+40,76ghmc37tf,85% Dark,91,88
+41,8ht744zpav,85% Dark,93,91
+42,ap85nthk87,85% Dark,90,91
+43,4fel6r52k8,85% Dark,83,81
+44,wgqt532egr,85% Dark,93,92
+45,plbshz5w36,85% Dark,93,94
+46,bca8bah4ke,85% Dark,106,104
+47,2weybet539,85% Dark,86,88
+48,qd8c7qwk6d,85% Dark,89,92
+49,mv5d3egv5u,85% Dark,100,98
+50,g7sgxs87xb,99% Dark,87,87
+51,wqh7fm3qnj,99% Dark,89,90
+52,szp7kastzr,99% Dark,89,89
+53,ghd8d5ngwv,99% Dark,93,94
+54,wuy4rz6hq9,99% Dark,90,90
+55,guu7bj67wx,99% Dark,87,88
+56,k6xgu2dg28,99% Dark,86,85
+57,ftf4qwq8rl,99% Dark,87,88
+58,fvmfea6yf2,99% Dark,91,89
+59,vx7gcsn79n,99% Dark,91,92
+60,n445q3c942,99% Dark,90,91
+61,3yvg2d4ugh,99% Dark,89,92
