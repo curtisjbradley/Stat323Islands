@@ -1,63 +1,63 @@
 ,person_id,treatment,base_blood_glucose,end_blood_glucose
-0,8uawxcp4e5,Control,92,89
-1,czwugg2hn6,Control,90,88
-2,sdqs3bgcu9,Control,85,87
-3,m4vtt3nf5y,Control,87,84
-4,slhktb7gtj,Control,96,96
-5,d92bk2qj4z,Control,85,86
-6,ndvmpfcdax,Control,90,88
-7,wj9trvcqc9,Control,93,96
-8,sahfgjymbv,Control,89,90
-9,v5pmb34zfr,Control,89,91
-10,g95l2hmgf8,Control,89,92
-11,95zynn88w8,Control,83,81
-12,bdhv8hcekj,Control,94,92
-13,m8pd3xntcr,40% Dark,91,91
-14,dgsd2ztkqh,40% Dark,86,86
-15,9b24ge9e9g,40% Dark,87,84
-16,pc5r8ugrgf,40% Dark,86,85
-17,lmpk5hpjer,40% Dark,88,87
-18,pjhpfdl877,40% Dark,84,84
-19,7fbk4esj6y,40% Dark,91,92
-20,nq7v8jvhgj,40% Dark,86,89
-21,3v9wfnbpw3,40% Dark,93,93
-22,rmdj9agkx8,40% Dark,92,94
-23,4cdmnkkcgp,40% Dark,89,87
-24,fggzhu5pnt,40% Dark,98,96
-25,lhvzvmn67y,40% Dark,85,82
-26,wpfsba8ydm,70% Dark,90,92
-27,2g7u9h5t4b,70% Dark,89,91
-28,cu5cecmdu9,70% Dark,99,98
-29,ds56b9yyd9,70% Dark,98,95
-30,agdlwswhwu,70% Dark,92,106
-31,ht4tedak6q,70% Dark,84,83
-32,culbdasr8c,70% Dark,94,90
-33,9lbfmbj3na,70% Dark,86,86
-34,bvfn4y4eqm,70% Dark,93,95
-35,huv44xwxe6,70% Dark,86,89
-36,r46cglybfy,70% Dark,88,86
-37,jurtl9cswh,70% Dark,87,87
-38,g9pz9h9vh4,85% Dark,85,82
-39,e7j8ql5zqp,85% Dark,95,96
-40,76ghmc37tf,85% Dark,91,88
-41,8ht744zpav,85% Dark,93,91
-42,ap85nthk87,85% Dark,90,91
-43,4fel6r52k8,85% Dark,83,81
-44,wgqt532egr,85% Dark,93,92
-45,plbshz5w36,85% Dark,93,94
-46,bca8bah4ke,85% Dark,106,104
-47,2weybet539,85% Dark,86,88
-48,qd8c7qwk6d,85% Dark,89,92
-49,mv5d3egv5u,85% Dark,100,98
-50,g7sgxs87xb,99% Dark,87,87
-51,wqh7fm3qnj,99% Dark,89,90
-52,szp7kastzr,99% Dark,89,89
-53,ghd8d5ngwv,99% Dark,93,94
-54,wuy4rz6hq9,99% Dark,90,90
-55,guu7bj67wx,99% Dark,87,88
-56,k6xgu2dg28,99% Dark,86,85
-57,ftf4qwq8rl,99% Dark,87,88
-58,fvmfea6yf2,99% Dark,91,89
-59,vx7gcsn79n,99% Dark,91,92
-60,n445q3c942,99% Dark,90,91
-61,3yvg2d4ugh,99% Dark,89,92
+0,huv44xwxe6,Control,86,88
+1,pc5r8ugrgf,Control,84,84
+2,4fel6r52k8,Control,83,82
+3,jurtl9cswh,Control,88,88
+4,2weybet539,Control,90,85
+5,9lbfmbj3na,Control,86,86
+6,guu7bj67wx,Control,86,88
+7,wqh7fm3qnj,Control,93,91
+8,3v9wfnbpw3,Control,90,93
+9,fvmfea6yf2,Control,92,89
+10,ftf4qwq8rl,Control,85,86
+11,4cdmnkkcgp,Control,87,89
+12,rmdj9agkx8,Control,91,91
+13,qd8c7qwk6d,40% Dark,92,102
+14,g95l2hmgf8,40% Dark,91,106
+15,ds56b9yyd9,40% Dark,96,110
+16,k6xgu2dg28,40% Dark,84,97
+17,8uawxcp4e5,40% Dark,91,104
+18,ndvmpfcdax,40% Dark,89,101
+19,v5pmb34zfr,40% Dark,91,104
+20,lhvzvmn67y,40% Dark,85,98
+21,g9pz9h9vh4,40% Dark,83,95
+22,plbshz5w36,40% Dark,92,101
+23,pjhpfdl877,40% Dark,86,103
+24,culbdasr8c,40% Dark,89,103
+25,wuy4rz6hq9,40% Dark,93,102
+26,m8pd3xntcr,70% Dark,91,98
+27,slhktb7gtj,70% Dark,97,105
+28,sahfgjymbv,70% Dark,90,103
+29,2g7u9h5t4b,70% Dark,89,97
+30,bca8bah4ke,70% Dark,91,99
+31,n445q3c942,70% Dark,90,95
+32,bdhv8hcekj,70% Dark,93,104
+33,m4vtt3nf5y,70% Dark,84,93
+34,cu5cecmdu9,70% Dark,100,105
+35,e7j8ql5zqp,70% Dark,94,104
+36,9b24ge9e9g,70% Dark,89,95
+37,g7sgxs87xb,70% Dark,87,95
+38,3yvg2d4ugh,85% Dark,91,93
+39,r46cglybfy,85% Dark,88,93
+40,7fbk4esj6y,85% Dark,93,94
+41,8ht744zpav,85% Dark,96,98
+42,95zynn88w8,85% Dark,80,86
+43,bvfn4y4eqm,85% Dark,97,100
+44,czwugg2hn6,85% Dark,92,93
+45,wpfsba8ydm,85% Dark,92,95
+46,agdlwswhwu,85% Dark,93,93
+47,ghd8d5ngwv,85% Dark,93,94
+48,mv5d3egv5u,85% Dark,99,100
+49,sdqs3bgcu9,85% Dark,89,89
+50,szp7kastzr,99% Dark,87,87
+51,vx7gcsn79n,99% Dark,91,93
+52,d92bk2qj4z,99% Dark,84,86
+53,lmpk5hpjer,99% Dark,86,86
+54,wj9trvcqc9,99% Dark,93,95
+55,76ghmc37tf,99% Dark,88,90
+56,ht4tedak6q,99% Dark,83,86
+57,fggzhu5pnt,99% Dark,96,95
+58,wgqt532egr,99% Dark,93,94
+59,dgsd2ztkqh,99% Dark,87,88
+60,nq7v8jvhgj,99% Dark,87,89
+61,ap85nthk87,99% Dark,90,91
