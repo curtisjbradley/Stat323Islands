@@ -85,7 +85,7 @@ class Person:
         )
         if res.status_code != 200:
             raise Exception("Error with task request")
-        if res.text == 'Not available':
+        if res.text == 'Not available' or res.text == 'Busy':
             return None
 
         lines = res.text.splitlines()
