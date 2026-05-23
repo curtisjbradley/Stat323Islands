@@ -1,12 +1,9 @@
 from api import IslandsAPI
 from api.tasks import  ENERGY_DRINK, ENERGY_DRINK_CAFFEINE_FREE_250ML, ENERGY_DRINK_SUGAR_FREE_250ML, ENERGY_DRINK_CAFFEINE_FREE_SUGAR_FREE_250ML, BLOOD_CORTISOL
-import pandas as pd
-from time import time_ns,sleep
+import csv
+from time import time_ns, sleep
 
 from tqdm import tqdm
-
-tqdm.pandas()
-tqdm()
 
 api = IslandsAPI()
 treatments = {
@@ -16,11 +13,11 @@ treatments = {
     "CAFFEINE_AND_SUGAR_FREE" : ENERGY_DRINK_CAFFEINE_FREE_SUGAR_FREE_250ML
 }
 
+with open('energy_drink_assignments.csv', newline='') as f:
+    assignments = list(csv.DictReader(f))
 
-assignments = pd.read_csv('energy_drink_assignments.csv')
-
-
-assignments['person_id'] = assignments['person_id'].map(lambda x: api.get_person_manager().get_person(x))
+for row in assignments:
+    row['person_id'] = api.get_person_manager().get_person(row['person_id'])
 
 
 
@@ -48,15 +45,15 @@ def run_task(row, n):
     return row['person_id'].do_task(treatments[row[f'treatment_{n}']])
 
 
-def  run_treatment(n : int):
-    tqdm.pandas(desc="Starting Blood Cortisol Task")
-    blood_cortisol_task  = assignments['person_id'].progress_apply(lambda person: person.do_task(BLOOD_CORTISOL)).apply(pd.Series) #Have every person measure their blood glucose levels
-    wait_with_progress(blood_cortisol_task['end_time'].max(), 'Waiting for Blood Cortisol')
-    wait_times = assignments.progress_apply(lambda row: run_task(row,n), axis=1)
-    wait_with_progress(wait_times['end_time'].max(), "Drinking Energy Drinks")
+def run_treatment(n : int):
+    tqdm.write("Starting Blood Cortisol Task")
+    cortisol_results = [person_row['person_id'].do_task(BLOOD_CORTISOL) for person_row in tqdm(assignments)]
+    wait_with_progress(max(r['end_time'] for r in cortisol_results if r), 'Waiting for Blood Cortisol')
+    drink_results = [run_task(row, n) for row in tqdm(assignments)]
+    wait_with_progress(max(r['end_time'] for r in drink_results if r), "Drinking Energy Drinks")
     wait_with_progress((time_ns() // 1_000_000) + 30 * 60 * 1000 , "Waiting for effect")
-    blood_cortisol_task  = assignments['person_id'].progress_apply(lambda person: person.do_task(BLOOD_CORTISOL)).apply(pd.Series) #Have every person measure their blood glucose levels
-    wait_with_progress(blood_cortisol_task['end_time'].max(), 'Waiting for Blood Cortisol')
+    cortisol_results = [person_row['person_id'].do_task(BLOOD_CORTISOL) for person_row in tqdm(assignments)]
+    wait_with_progress(max(r['end_time'] for r in cortisol_results if r), 'Waiting for Blood Cortisol')
 
 
 
