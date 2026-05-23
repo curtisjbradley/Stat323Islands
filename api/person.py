@@ -10,7 +10,7 @@ from .tasks import TaskResult, Task
 
 import regex as re
 from bs4 import BeautifulSoup
-from typing import List
+from typing import List, Optional
 
 # ---------------------------------------------------------------------------
 # Compiled regex constants
@@ -69,7 +69,7 @@ class Person:
             raise Exception("Error with toggle contact request")
         return 'added' in res.text
 
-    def do_task(self, task: Task) -> dict | None:
+    def do_task(self, task: Task) -> Optional[dict]:
         """
         Submit a task for this islander.
 
@@ -181,7 +181,7 @@ class Person:
         ]
 
     @staticmethod
-    def _parse_result(task) -> TaskResult | None:
+    def _parse_result(task) -> Optional[TaskResult]:
         """Parse a single taskresult div into a TaskResult object."""
         if task.text is None:
             return None
