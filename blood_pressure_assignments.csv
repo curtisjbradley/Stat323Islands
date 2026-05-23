@@ -1,49 +1,49 @@
 person_id,Temperature (C),Hydration,Salty Snack
-zl9wm65n63,-20,Drink,Eaten
-nembnq2bwy,-20,Drink,Eaten
-cjrncpq7nb,-20,Drink,Eaten
-d6h69eee8d,-20,Drink,Eaten
-22glxwcm3n,-20,Drink,None
-mg9y2yzbnq,-20,Drink,None
-lb4up6a9f7,-20,Drink,None
-u2jy5htlk2,-20,Drink,None
-z6x4tuslcv,-20,NoDrink,Eaten
-nltvrn8r6v,-20,NoDrink,Eaten
-cjrncpq7nb,-20,NoDrink,Eaten
-qah4ulhqqp,-20,NoDrink,Eaten
-y32fsct4sy,-20,NoDrink,None
-a2ttweblsu,-20,NoDrink,None
-jx6ctaltpb,-20,NoDrink,None
-2wynmj9uzw,-20,NoDrink,None
-lb4up6a9f7,5,Drink,Eaten
-6uug5wtkx3,5,Drink,Eaten
-dxg4mdzga2,5,Drink,Eaten
-6uug5wtkx3,5,Drink,Eaten
-puqv6ub6gg,5,Drink,None
-y32fsct4sy,5,Drink,None
-nq8zh9ty67,5,Drink,None
-2wynmj9uzw,5,Drink,None
-mnvlcfldsg,5,NoDrink,Eaten
-nq8zh9ty67,5,NoDrink,Eaten
-puqv6ub6gg,5,NoDrink,Eaten
-896wrucvea,5,NoDrink,Eaten
-u2jy5htlk2,5,NoDrink,None
-cjrncpq7nb,5,NoDrink,None
-sac7nny3ln,5,NoDrink,None
-nq8zh9ty67,5,NoDrink,None
-a2ttweblsu,40,Drink,Eaten
-puqv6ub6gg,40,Drink,Eaten
-nltvrn8r6v,40,Drink,Eaten
-99tjwh9l52,40,Drink,Eaten
-6n6trakalg,40,Drink,None
-mg9y2yzbnq,40,Drink,None
-4z6g4ufpla,40,Drink,None
-epd3rjfy5r,40,Drink,None
-dxg4mdzga2,40,NoDrink,Eaten
-epd3rjfy5r,40,NoDrink,Eaten
-4z6g4ufpla,40,NoDrink,Eaten
-6n6trakalg,40,NoDrink,Eaten
-99tjwh9l52,40,NoDrink,None
-8a8lxb2xkz,40,NoDrink,None
-nembnq2bwy,40,NoDrink,None
-22glxwcm3n,40,NoDrink,None
+yvkvhccs7a,-20,Drink,Snack
+edmuyzue9j,-20,Drink,Snack
+es58v2ml4m,-20,Drink,Snack
+un7ngey94p,-20,Drink,Snack
+g6rylu587m,-20,Drink,No Snack
+8m2xq3nwub,-20,Drink,No Snack
+sns5fcvh6u,-20,Drink,No Snack
+pblc6kgmtf,-20,Drink,No Snack
+un7ngey94p,-20,NoDrink,Snack
+876flmv64g,-20,NoDrink,Snack
+rkm9rfff4p,-20,NoDrink,Snack
+4g9qd4byu3,-20,NoDrink,Snack
+un7ngey94p,-20,NoDrink,No Snack
+d9zdsmxrks,-20,NoDrink,No Snack
+uyah6ege6y,-20,NoDrink,No Snack
+s99vrwcksj,-20,NoDrink,No Snack
+d9zdsmxrks,5,Drink,Snack
+yvkvhccs7a,5,Drink,Snack
+hjpt5vxsn3,5,Drink,Snack
+n9tlq335p3,5,Drink,Snack
+dzww2ap4dj,5,Drink,No Snack
+htwebscjqu,5,Drink,No Snack
+vxh7hutzvh,5,Drink,No Snack
+htwebscjqu,5,Drink,No Snack
+p3y8puevcv,5,NoDrink,Snack
+es58v2ml4m,5,NoDrink,Snack
+t45ztfu6pd,5,NoDrink,Snack
+dzww2ap4dj,5,NoDrink,Snack
+r7pe8fmul8,5,NoDrink,No Snack
+24blsxn3ht,5,NoDrink,No Snack
+r94cvwjp6j,5,NoDrink,No Snack
+24blsxn3ht,5,NoDrink,No Snack
+jdcxdjkwgn,40,Drink,Snack
+pblc6kgmtf,40,Drink,Snack
+ssbl8epjd6,40,Drink,Snack
+g68yksalkp,40,Drink,Snack
+edmuyzue9j,40,Drink,No Snack
+g68yksalkp,40,Drink,No Snack
+s99vrwcksj,40,Drink,No Snack
+24blsxn3ht,40,Drink,No Snack
+t45ztfu6pd,40,NoDrink,Snack
+hjpt5vxsn3,40,NoDrink,Snack
+edmuyzue9j,40,NoDrink,Snack
+9ezaykx5zx,40,NoDrink,Snack
+dzww2ap4dj,40,NoDrink,No Snack
+pblc6kgmtf,40,NoDrink,No Snack
+tn32dtw6zu,40,NoDrink,No Snack
+dj8xdrpvw7,40,NoDrink,No Snack
