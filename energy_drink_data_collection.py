@@ -49,15 +49,17 @@ def run_treatment(n : int):
     tqdm.write("Starting Blood Cortisol Task")
     cortisol_results = [person_row['person_id'].do_task(BLOOD_CORTISOL) for person_row in tqdm(assignments)]
     wait_with_progress(max(r['end_time'] for r in cortisol_results if r), 'Waiting for Blood Cortisol')
+    tqdm.write("Starting Drink Task")
     drink_results = [run_task(row, n) for row in tqdm(assignments)]
     wait_with_progress(max(r['end_time'] for r in drink_results if r), "Drinking Energy Drinks")
     wait_with_progress((time_ns() // 1_000_000) + 30 * 60 * 1000 , "Waiting for effect")
+    tqdm.write("Collecting Blood Cortisol... Again")
     cortisol_results = [person_row['person_id'].do_task(BLOOD_CORTISOL) for person_row in tqdm(assignments)]
     wait_with_progress(max(r['end_time'] for r in cortisol_results if r), 'Waiting for Blood Cortisol')
 
 
 
-for i in range(1, len(treatments)+1):
+for i in range(2, len(treatments)+1):
     print("Running Treatment" , i)
     run_treatment(i)
     wait_with_progress((time_ns() // 1_000_000) + 4 * 60 * 60 * 1000 , "Waiting 4 hours for washout")
